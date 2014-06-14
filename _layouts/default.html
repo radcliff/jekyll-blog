@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+      
+      {% include header.html %}
+
+      <div class="page-content">
+        <div class="wrap">
+        {{ content }}
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var header_height = $(' .site-header ').height();
+        var footer_height = $(' .site-footer').height();
+        
+        
+        $(' .page-content ').css('padding-top', (header_height + 10) + 'px');
+        $(' .page-content ').css('padding-bottom', ((footer_height * 4) + 50) + 'px');
+
+        if ( $( window ).width() <= 320 ) {
+          $(' .site-footer').css('display', 'none');
+        }
+      }); 
+    </script>
+  </body>
+</html>

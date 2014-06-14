@@ -1,0 +1,13 @@
+# Site settings
+title: Sterling.
+email: sterlingradcliff@gmail.com
+description: "Apparently, it is a thing to have a blog. Perhaps we should make it a thing to have something worth saying instead?"
+baseurl: ""
+url: "http://radcliff.github.io"
+github: radcliff
+twitter: radcliffx
+instagram: radcliff_
+
+# Build settings
+markdown: kramdown
+permalink: pretty
